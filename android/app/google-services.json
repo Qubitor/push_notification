@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "218511506309",
+    "firebase_url": "https://ivigil-38318.firebaseio.com",
+    "project_id": "ivigil-38318",
+    "storage_bucket": "ivigil-38318.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218511506309:android:8227192ee2523936",
+        "android_client_info": {
+          "package_name": "com.push_notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218511506309-30c2ri2hsm92ahov04k53oeg18bngam4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdLDCBG7kyPgxWnNPNnyH-Y-uwvE43ZQs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
