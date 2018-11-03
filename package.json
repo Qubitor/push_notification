@@ -9,7 +9,13 @@
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.4",
-    "react-native-fcm": "^16.2.3"
+    "react-native-alarm-notification": "^1.2.4",
+    "react-native-background-task": "^0.2.1",
+    "react-native-background-timer": "^2.0.1",
+    "react-native-elements": "^0.19.1",
+    "react-native-fcm": "^16.2.3",
+    "react-native-grid-component": "^1.1.0",
+    "react-native-vector-icons": "^6.0.2"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
