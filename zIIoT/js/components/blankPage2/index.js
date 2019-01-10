@@ -18,7 +18,7 @@ import {
   Card, CardItem,
 } from "native-base";
 import { Grid, Row } from "react-native-easy-grid";
-
+ip="192.168.10.26"
 class AcceptList extends Component {
 
   constructor(props) {
@@ -36,7 +36,7 @@ class AcceptList extends Component {
   componentWillMount() {
     // this.timer = setInterval(()=> 5000)
     this._interval = setInterval(() => {
-      fetch('http://192.168.10.26:8000/sample/accept_api')
+      fetch('http://'+ip+':8000/sample/accept_api')
         .then((response) => response.json())
 
         .then((responseJson) => {

@@ -23,6 +23,7 @@ import { Grid, Row } from "react-native-easy-grid";
 import { setIndex } from "../../actions/list";
 import { openDrawer } from "../../actions/drawer";
 import styles from "./styles";
+ip="192.168.10.26"
 
 class Home extends Component {
   constructor(props) {
@@ -54,7 +55,7 @@ class Home extends Component {
   componentWillMount() {
     // this.timer = setInterval(()=> 5000)
     this._interval = setInterval(() => {
-      fetch('http://192.168.10.26:8000/sample/notifi_data')
+      fetch('http://'+ip+':8000/sample/notifi_data')
         .then((response) => response.json())
 
         .then((responseJson) => {
@@ -85,7 +86,7 @@ class Home extends Component {
 
   reject() {
     this.reject = setInterval(() => {
-      fetch('http://192.168.10.26:8000/sample/rev')
+      fetch('http://'+ip+':8000/sample/rev')
         .then((response) => response.json())
 
         .then((responseJson) => {
@@ -107,7 +108,7 @@ class Home extends Component {
   }
   waiting() {
     this.waiting = setInterval(() => {
-      fetch('http://192.168.10.26:8000/sample/test')
+      fetch('http://'+ip+':8000/sample/test')
         .then((response) => response.json())
 
         .then((responseJson) => {
@@ -129,7 +130,7 @@ class Home extends Component {
   }
   accept() {
     this.accept = setInterval(() => {
-      fetch('http://192.168.10.26:8000/sample/sam')
+      fetch('http://'+ip+':8000/sample/sam')
         .then((response) => response.json())
 
         .then((responseJson) => {
@@ -154,7 +155,7 @@ class Home extends Component {
 
   handleAccept = async (x) => {
     alert("hi");
-    fetch('http://192.168.10.26:8000/sample/accept/' + x)
+    fetch('http://'+ip+':8000/sample/accept/' + x)
       .then((response) => response.json())
       .then((responseJson) => {
         // console.warn('hi');
@@ -166,7 +167,7 @@ class Home extends Component {
       });
   }
   handleReject = async (x) => {
-    fetch('http://192.168.10.26:8000/sample/reject/' + x)
+    fetch('http://'+ip+':8000/sample/reject/' + x)
       .then((response) => response.json())
       .then((responseJson) => {
         Alert.alert("User Rejetced Successfully");
@@ -177,7 +178,7 @@ class Home extends Component {
       });
   }
   handleDelete = async (x) => {
-    fetch('http://192.168.10.26:8000/sample/cans/' + x)
+    fetch('http://'+ip+':8000/sample/cans/' + x)
       .then((response) => response.json())
       .then((responseJson) => {
         Alert.alert("User Ignore Successfully");
